@@ -1,6 +1,6 @@
 # devcontainer
 
-Development container configs.
+Base template for a development container using Debian 12 (_bookworm_) image.
 
 ## References
 
