@@ -2,5 +2,6 @@
   "cSpell.words": [
     "powerlevel",
     "powerline"
-  ]
+  ],
+  "terminal.integrated.fontFamily": "'MesloLGM Nerd Font Mono', monospace"
 }
