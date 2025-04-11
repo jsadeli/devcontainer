@@ -1,3 +1,4 @@
+# cSpell:words FPATH
 # Path to Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
