@@ -19,5 +19,4 @@ DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
 
 # Activate oh-my-posh prompt; this should be the last line.
-# The path is set from the post-create.sh script.
-eval "$(oh-my-posh init zsh --config ~/.oh-my-posh/p10k_lean.omp.json)"
+eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/jsadeli/dotfiles/refs/heads/main/configs/p10k_lean.omp.json')"

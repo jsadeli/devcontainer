@@ -13,10 +13,8 @@ cd fonts || exit
 ./install.sh
 cd .. && rm -rf fonts
 
-echo -e "${YELLOW}-> Install Oh My Posh and custom theme...${OFF}"
+echo -e "${YELLOW}-> Install Oh My Posh...${OFF}"
 curl -s https://ohmyposh.dev/install.sh | bash -s
-mkdir -p "$HOME/.oh-my-posh"
-cp .devcontainer/configs/p10k_lean.omp.json "$HOME/.oh-my-posh/p10k_lean.omp.json"
 
 echo -e "${YELLOW}-> Copy customized zsh config...${OFF}"
 cp .devcontainer/configs/.zshrc "$HOME/.zshrc"
