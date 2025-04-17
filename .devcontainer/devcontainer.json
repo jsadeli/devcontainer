@@ -8,35 +8,29 @@
     "dockerfile": "./Dockerfile"
   },
 
-  // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
+    "ghcr.io/devcontainers/features/git": {},
     "ghcr.io/devcontainers/features/common-utils": {
       "installZsh": true,
       "installOhMyZsh": true,
       "installOhMyZshConfig": true,
       "configureZshAsDefaultShell": true
-    },
-    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
-      "plugins": "zsh-syntax-highlighting zsh-completions zsh-autosuggestions",
-      "omzPlugins": "https://github.com/zsh-users/zsh-syntax-highlighting.git https://github.com/zsh-users/zsh-completions.git https://github.com/zsh-users/zsh-autosuggestions.git"
     }
   },
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-
-  // Configure tool-specific properties.
   "customizations": {
-    "vscode": {
+    "jetbrains": {
+      "backend": "IntelliJ",
       "settings": {
-        "terminal.integrated.fontFamily": "'MesloLGM Nerd Font Mono', monospace"
-      }
+        // IDE settings can be added via “Show context actions”|“Add currently modified settings from IDE”.
+        // A complete list of supported settings is also available through auto-completion
+      },
+      "plugins": [
+        // A set of plugin IDs.
+        // Plugin ID can be found on the corresponding plugin’s page at https://plugins.jetbrains.com.
+      ]
     }
   },
 
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
-
-  // Run commands after the container is created.
+  "remoteUser": "root",
   "postCreateCommand": ".devcontainer/post-create.sh"
 }

@@ -7,6 +7,9 @@ YELLOW="\033[0;33m"
 # zsh configurations
 # ------------------------------------------------------------------------------
 
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 echo -e "${YELLOW}-> Install 'Meslo LGM NerdFont Mono Regular'...${OFF}"
 mkdir -p ~/.local/share/fonts
 (cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/refs/heads/master/patched-fonts/Meslo/M/Regular/MesloLGMNerdFontMono-Regular.ttf)
